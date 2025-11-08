@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nodi Verse Lead Research Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <div class="hero__badge">Lead Research • Premium Visual Brands</div>
+          <h1>Opportunity Radar for Nodi Verse</h1>
+          <p class="hero__subtitle">
+            Curated pipeline of design-forward brands ready for cinematic storytelling, AI
+            collaboration, and premium animated content.
+          </p>
+          <div class="hero__tags">
+            <span>AI + Human Craft</span>
+            <span>Animation-First</span>
+            <span>Minimal • Futuristic</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="insights">
+          <div class="insights__card">
+            <h2>Quick Signals</h2>
+            <div class="signals">
+              <div class="signal">
+                <div class="signal__label">Brands Monitored</div>
+                <div class="signal__value" id="signal-total"></div>
+              </div>
+              <div class="signal">
+                <div class="signal__label">High Animation Appetite</div>
+                <div class="signal__value" id="signal-animation"></div>
+              </div>
+              <div class="signal">
+                <div class="signal__label">Top Markets Covered</div>
+                <div class="signal__value" id="signal-markets"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="insights__card lead-actions">
+            <h2>Activation Playbook</h2>
+            <ol>
+              <li>
+                Pair Nodi Verse reels with each brand's latest campaign aesthetic to
+                deliver a tailored outreach preview.
+              </li>
+              <li>
+                Offer a rapid AI-assisted motion storyboard workshop (60 mins) to secure
+                buy-in and co-create their hero narrative.
+              </li>
+              <li>
+                Highlight a cross-platform rollout plan: teaser micro-animations, hero
+                film, and interactive web motion assets.
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="filters">
+          <div class="filters__headline">
+            <h2>Filter Leads</h2>
+            <p>Dial in on brands aligned with upcoming sprints or case study ambitions.</p>
+          </div>
+          <div class="filters__grid">
+            <label class="filter">
+              <span>Industry</span>
+              <select id="filter-industry">
+                <option value="all">All</option>
+              </select>
+            </label>
+
+            <label class="filter">
+              <span>Location</span>
+              <select id="filter-location">
+                <option value="all">All</option>
+              </select>
+            </label>
+
+            <label class="filter">
+              <span>Platform Focus</span>
+              <select id="filter-platform">
+                <option value="all">All</option>
+              </select>
+            </label>
+
+            <label class="filter">
+              <span>Content Cadence</span>
+              <select id="filter-activity">
+                <option value="all">All</option>
+                <option value="high">High (4+ posts/week)</option>
+                <option value="consistent">Consistent (2-3 posts/week)</option>
+                <option value="curated">Curated (1-2 posts/week)</option>
+              </select>
+            </label>
+
+            <label class="filter search-filter">
+              <span>Search by brand or theme</span>
+              <input
+                id="filter-search"
+                type="search"
+                placeholder="AI beauty, kinetic fashion, launch teaser…"
+                autocomplete="off"
+              />
+            </label>
+          </div>
+        </section>
+
+        <section class="leads">
+          <div class="leads__header">
+            <h2>Prime Collaboration Targets</h2>
+            <div>
+              <span class="pill pill--hot">High-fit shortlist</span>
+              <span class="pill pill--warm">Emerging opportunity</span>
+            </div>
+          </div>
+          <div id="leads-container" class="leads__grid"></div>
+          <div id="empty-state" class="empty-state hidden">
+            <h3>No matches yet</h3>
+            <p>
+              Expand your filters or broaden keywords to surface more design-forward
+              opportunities.
+            </p>
+          </div>
+        </section>
+
+        <section class="cta">
+          <div class="cta__panel">
+            <h2>Next Steps for the Growth Pod</h2>
+            <div class="cta__grid">
+              <div class="cta__item">
+                <span class="cta__label">Prototype</span>
+                <p>
+                  Build a modular AI motion style frame kit referencing the top three
+                  brands’ color language to personalize outreach assets.
+                </p>
+              </div>
+              <div class="cta__item">
+                <span class="cta__label">Outreach</span>
+                <p>
+                  Use short-form cinematic loops to secure 15-min discovery calls; send via
+                  Instagram DMs and founder email where available.
+                </p>
+              </div>
+              <div class="cta__item">
+                <span class="cta__label">Amplify</span>
+                <p>
+                  Document the collaboration journey publicly to attract adjacent premium
+                  brands across fashion, lifestyle, and future-tech.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <strong>Nodi Verse</strong>
+          <span>Next-gen animation x AI lab for premium brands.</span>
+        </div>
+        <div class="footer__links">
+          <a href="mailto:hello@nodiverse.studio">hello@nodiverse.studio</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener"
+            >Follow on Instagram</a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
